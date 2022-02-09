@@ -1,0 +1,91 @@
+Bootstrap 4 Carousel
+====================
+
+#  
+
+Bootstrap 4 Carousel
+--------------------
+
+The Carousel is a slideshow for cycling through elements.
+
+#  
+
+How To Create a Carousel
+------------------------
+
+The following example shows how to create a basic carousel with indicators and controls:
+
+### Example
+
+``` html
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="la.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="chicago.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+```
+
+### Example explained
+
+A description of what each class from the example above do:
+
+| Class | Description |
+| `.carousel` | Creates a carousel |
+| `.carousel-indicators` | Adds indicators for the carousel. These are the little dots at the bottom of each slide (which indicates how many slides there are in the carousel, and which slide the user are currently viewing) |
+| `.carousel-inner` | Adds slides to the carousel |
+| `.carousel-item` | Specifies the content of each slide |
+| `.carousel-control-prev` | Adds a left (previous) button to the carousel, which allows the user to go back between the slides |
+| `.carousel-control-next` | Adds a right (next) button to the carousel, which allows the user to go forward between the slides |
+| `.carousel-control-prev-icon` | Used together with .carousel-control-prev to create a "previous" button |
+| `.carousel-control-next-icon` | Used together with .carousel-control-next to create a "next" button |
+| `.slide` | Adds a CSS transition and animation effect when sliding from one item to the next. Remove this class if you do not want this effect |
+
+Add Captions to Slides
+----------------------
+
+Add elements inside `<div class="carousel-caption">` within each `<div class="carousel-item">` to create a caption for each slide:
+
+### Example
+
+``` html
+<div class="carousel-item">
+  <img src="la.jpg" alt="Los Angeles">
+  <div class="carousel-caption">
+    <h3>Los Angeles</h3>
+    <p>We had such a great time in LA!</p>
+  </div>
+</div>
+```
+
+#  
+
+Complete Bootstrap Carousel Reference
+-------------------------------------
+
+For a complete reference of all carousel options, methods and events, go to our [Bootstrap JS Carousel Reference](https://www.w3schools.com/bootstrap4/bootstrap_ref_js_carousel.asp).
