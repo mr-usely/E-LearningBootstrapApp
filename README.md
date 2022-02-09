@@ -1,6 +1,6 @@
-# module_app
+# E-Learning Bootstrap Mobile App
 
-A new Flutter project.
+Clone of W3Schools.com Bootstrap Course.
 
 ## Getting Started
 
